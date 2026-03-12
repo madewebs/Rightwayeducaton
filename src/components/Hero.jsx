@@ -49,22 +49,20 @@ function Hero() {
 
   const revealProgress = Math.min(scrollY / 600, 1);
 
-  const insetV = (1 - revealProgress) * 20;
-  const insetH = (1 - revealProgress) * 15;
-  const borderRadius = (1 - revealProgress) * 40;
+  const maxInsetV = isMobile ? 8 : 20;
+  const maxInsetH = isMobile ? 5 : 15;
+  const maxRadius = isMobile ? 24 : 40;
+
+  const insetV = (1 - revealProgress) * maxInsetV;
+  const insetH = (1 - revealProgress) * maxInsetH;
+  const borderRadius = (1 - revealProgress) * maxRadius;
   const scale = 1.05 - (revealProgress * 0.05);
 
-  const revealStyle = isMobile
-    ? {
-      clipPath: 'none',
-      transform: 'none',
-      filter: 'brightness(1)',
-    }
-    : {
-      clipPath: `inset(${insetV}% ${insetH}% ${insetV}% ${insetH}% round ${borderRadius}px)`,
-      transform: `scale(${scale})`,
-      filter: `brightness(${0.8 + revealProgress * 0.2})`,
-    };
+  const revealStyle = {
+    clipPath: `inset(${insetV}% ${insetH}% ${insetV}% ${insetH}% round ${borderRadius}px)`,
+    transform: `scale(${scale})`,
+    filter: `brightness(${0.8 + revealProgress * 0.2})`,
+  };
 
   return (
     <section id="home" className="hero hero--reveal">

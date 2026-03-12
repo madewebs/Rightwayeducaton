@@ -36,7 +36,7 @@ function Contact() {
             <ul className="contact-details">
               <li>📧 info@rightwayeducation.com</li>
               <li>📞 +91 6235593705</li>
-              <li>📍 kozhikode, India</li>
+              <li>📍 Kozhikode, Kerala, India</li>
             </ul>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
