@@ -30,7 +30,7 @@ const SocialSidebar = () => {
       id: 1,
       icon: <FaEnvelope size={20} />,
       label: 'Free Consultation',
-      url: 'https://wa.me/916235593705?text=Hi%2C%20I%20would%20like%20a%20free%20consultation%20about%20studying%20abroad.',
+      url: 'mailto:rightwayeduinternational@gmail.com',
       color: '#0d6efd',
       isTextItem: true
     },
@@ -39,7 +39,7 @@ const SocialSidebar = () => {
       id: 2,
       icon: <FaInstagram size={20} />,
       label: 'Instagram',
-      url: 'https://instagram.com',
+      url: 'https://www.instagram.com/right__way___?igsh=Nnd2d2gxNGNjbW1h',
       color: '#e4405f'
     },
 
@@ -48,7 +48,7 @@ const SocialSidebar = () => {
       id: 3,
       icon: <FaWhatsapp size={20} />,
       label: 'WhatsApp',
-      url: 'https://whatsapp.com',
+      url: 'https://wa.me/919743559930?text=Hi%2C%20I%20would%20like%20a%20free%20consultation%20about%20studying%20abroad.',
       color: '#25d366'
     }
   ];

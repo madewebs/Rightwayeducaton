@@ -14,7 +14,7 @@ function Contact() {
     const msg = encodeURIComponent(
       `Hi, I'd like a free consultation!\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterested in: ${formData.interest || 'General'}\nMessage: ${formData.message}`
     )
-    window.open(`https://wa.me/916235593705?text=${msg}`, '_blank')
+    window.open(`https://wa.me/919743559930?text=${msg}`, '_blank')
     setFormData({ name: '', email: '', phone: '', interest: '', message: '' })
   }
 
@@ -34,8 +34,8 @@ function Contact() {
               your education abroad.
             </p>
             <ul className="contact-details">
-              <li>📧 info@rightwayeducation.com</li>
-              <li>📞 +91 6235593705</li>
+              <li>📧 rightwayeduinternational@gmail.com</li>
+              <li>📞 +91 97435 59930</li>
               <li>📍 Kozhikode, Kerala, India</li>
             </ul>
           </div>

@@ -108,7 +108,7 @@ function Hero() {
 
             <div className="hero-cta">
               <a
-                href="https://wa.me/916235593705?text=Hi%2C%20I%20would%20like%20a%20free%20consultation%20about%20studying%20abroad."
+                href="https://wa.me/919743559930?text=Hi%2C%20I%20would%20like%20a%20free%20consultation%20about%20studying%20abroad."
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -75,8 +75,8 @@ function Footer() {
           <div className="footer-col">
             <h4 className="footer-col-title">Contact</h4>
             <ul className="footer-contact-list">
-              <li>📧 info@rightwayeducation.com</li>
-              <li>📞 +91 6235593705</li>
+              <li>📧 rightwayeduinternational@gmail.com</li>
+              <li>📞 +91 97435 59930</li>
               <li>📍 kozhikode, India</li>
             </ul>
           </div>
