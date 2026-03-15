@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../assets/logo.webp'
+import logo from '/newlogo.png'
 import { FaChevronDown } from 'react-icons/fa'
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
     setDropdownOpen(false)
   }
 
-  const countries = [
+  const studyAbroadCountries = [
     { label: 'UK', id: 'uk' },
     { label: 'USA', id: 'usa' },
     { label: 'Canada', id: 'canada' },
@@ -22,10 +22,21 @@ function Header() {
     { label: 'Germany', id: 'germany' },
   ]
 
+  const studyInIndiaStates = [
+    { label: 'New Delhi', id: 'delhi' },
+    { label: 'Karnataka', id: 'karnataka' },
+    { label: 'Bangalore', id: 'bangalore' },
+    { label: 'Tamil Nadu', id: 'tamilnadu' },
+    { label: 'Kerala', id: 'kerala' },
+    { label: 'Punjab', id: 'punjab' },
+    { label: 'Pune', id: 'pune' },
+  ]
+
   const desktopLinks = [
     { label: 'Home', id: 'home' },
     { label: 'Services', id: 'services' },
-    { label: 'Study Destination', id: 'study-destination', dropdown: true },
+    { label: 'Study Abroad', id: 'study-abroad' },
+    { label: 'Study In India', id: 'study-in-india', dropdown: true, dropdownItems: studyInIndiaStates },
     { label: 'Why Us', id: 'why-us' },
     { label: 'Get Started', id: 'contact', cta: true },
   ]
@@ -33,7 +44,8 @@ function Header() {
   const mobileLinks = [
     { label: 'Home', id: 'home' },
     { label: 'Services', id: 'services' },
-    { label: 'Study Destination', id: 'study-destination', dropdown: true },
+    { label: 'Study Abroad', id: 'study-abroad' },
+    { label: 'Study In India', id: 'study-in-india', dropdown: true, dropdownItems: studyInIndiaStates },
     { label: 'Why Us', id: 'why-us' },
     { label: 'Process', id: 'process' },
     { label: 'Get Started', id: 'contact', cta: true },
@@ -46,27 +58,27 @@ function Header() {
           className="dropdown-trigger"
           onMouseEnter={() => {
             if (typeof window !== 'undefined' && window.innerWidth > 768) {
-              setDropdownOpen(true)
+              setDropdownOpen(link.id)
             }
           }}
           onMouseLeave={() => {
             if (typeof window !== 'undefined' && window.innerWidth > 768) {
-              setDropdownOpen(false)
+              setDropdownOpen(null)
             }
           }}
           onClick={(e) => {
             e.preventDefault()
-            setDropdownOpen((prev) => !prev)
+            setDropdownOpen((prev) => prev === link.id ? null : link.id)
           }}
         >
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            {link.label} <FaChevronDown className={`dropdown-icon ${dropdownOpen ? 'rotate' : ''}`} />
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollTo(link.id) }}>
+            {link.label} <FaChevronDown className={`dropdown-icon ${dropdownOpen === link.id ? 'rotate' : ''}`} />
           </a>
-          <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-            {countries.map((country) => (
-              <li key={country.id}>
-                <a href={`#${country.id}`} onClick={(e) => { e.preventDefault(); scrollTo(country.id) }}>
-                  {country.label}
+          <ul className={`dropdown-menu ${dropdownOpen === link.id ? 'show' : ''}`}>
+            {link.dropdownItems && link.dropdownItems.map((item) => (
+              <li key={item.id}>
+                <a href={`#${item.id}`} onClick={(e) => { e.preventDefault(); scrollTo(item.id) }}>
+                  {item.label}
                 </a>
               </li>
             ))}

@@ -31,7 +31,7 @@ function Contact() {
             <h2 className="section-title">Begin Your Global Journey</h2>
             <p>
               Book a free consultation and let our experts chart the right path for
-              your education abroad.
+              your dream education.
             </p>
             <ul className="contact-details">
               <li>📧 rightwayeduinternational@gmail.com</li>
@@ -65,6 +65,7 @@ function Contact() {
             />
             <select name="interest" value={formData.interest} onChange={handleChange}>
               <option value="">I&apos;m interested in...</option>
+              <option value="india">India</option>
               <option value="usa">USA</option>
               <option value="uk">UK</option>
               <option value="canada">Canada</option>

@@ -48,7 +48,7 @@ const SocialSidebar = () => {
       id: 3,
       icon: <FaWhatsapp size={20} />,
       label: 'WhatsApp',
-      url: 'https://wa.me/919743559930?text=Hi%2C%20I%20would%20like%20a%20free%20consultation%20about%20studying%20abroad.',
+      url: 'https://wa.me/919743559930?text=Hi%2C%20I%20would%20like%20a%20free%20consultation%20about%20studying%20in%20India%20%26%20Abroad.',
       color: '#25d366'
     }
   ];

@@ -3,7 +3,9 @@ import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import ComingSoon from './components/ComingSoon'
 import StudyDestinations from './components/StudyDestinations'
+import StudyInIndia from './components/StudyInIndia'
 import WhyUs from './components/WhyUs'
 import Process from './components/Process'
 import Testimonials from './components/Testimonials'
@@ -24,7 +26,9 @@ function App() {
       <main>
         <Hero />
         <Services />
-        <StudyDestinations />
+        <StudyInIndia />
+        <ComingSoon />
+        {/* <StudyDestinations /> */}
         <WhyUs />
         <Process />
         <Testimonials />

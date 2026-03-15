@@ -4,7 +4,7 @@ const steps = [
   { num: '1', title: 'Consultation', desc: 'Share your aspirations. We assess your profile and recommend the best options.' },
   { num: '2', title: 'Planning', desc: 'We create a tailored roadmap with universities, courses, and timelines.' },
   { num: '3', title: 'Application', desc: 'Our experts handle your applications, essays, and documentation.' },
-  { num: '4', title: 'Departure', desc: 'Visa support, pre-departure briefing, and you\'re ready to fly.' },
+  { num: '4', title: 'Enrollment & Departure', desc: 'Visa support, pre-departure briefing, and you\'re ready to start.' },
 ]
 
 function Process() {

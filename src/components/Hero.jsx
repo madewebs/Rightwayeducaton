@@ -49,19 +49,22 @@ function Hero() {
 
   const revealProgress = Math.min(scrollY / 600, 1);
 
-  const maxInsetV = isMobile ? 8 : 20;
-  const maxInsetH = isMobile ? 5 : 15;
-  const maxRadius = isMobile ? 24 : 40;
+  const maxInsetV = isMobile ? 3 : 6;
+  const maxInsetH = isMobile ? 2 : 4;
+  const maxRadius = isMobile ? 12 : 16;
 
   const insetV = (1 - revealProgress) * maxInsetV;
   const insetH = (1 - revealProgress) * maxInsetH;
   const borderRadius = (1 - revealProgress) * maxRadius;
-  const scale = 1.05 - (revealProgress * 0.05);
+
+  // Make the zoom extremely subtle to avoid heavy repainting
+  const scale = 1.01 - (revealProgress * 0.01);
 
   const revealStyle = {
     clipPath: `inset(${insetV}% ${insetH}% ${insetV}% ${insetH}% round ${borderRadius}px)`,
     transform: `scale(${scale})`,
-    filter: `brightness(${0.8 + revealProgress * 0.2})`,
+    // Slower brightness transition, starting brighter
+    filter: `brightness(${0.9 + revealProgress * 0.1})`,
   };
 
   return (
@@ -73,7 +76,7 @@ function Hero() {
           <div className="hero-content hero-content--centralized">
             <p className="hero-tagline">Your Pathway to Global Excellence</p>
             <h1 className="hero-title--mask">
-              Study Abroad.<br />Done Right.
+              Study in India<br /> & Abroad.
             </h1>
           </div>
         </div>
@@ -103,7 +106,7 @@ function Hero() {
             </p>
 
             <h1 style={{ color: '#fff' }}>
-              Study Abroad.<br />Done Right.
+              Study in India<br /> & Abroad.
             </h1>
 
             <div className="hero-cta">

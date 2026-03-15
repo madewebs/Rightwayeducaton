@@ -17,7 +17,7 @@ const services = [
   {
     num: '04',
     title: 'Scholarship Assistance',
-    desc: 'Identify and apply for scholarships, grants, and funding options to make your abroad dream affordable.',
+    desc: 'Identify and apply for scholarships, grants, and funding options to make your dream education affordable.',
   },
 ]
 
@@ -26,7 +26,7 @@ function Services() {
     <section id="services" className="section services">
       <div className="container">
         <p className="section-tagline">What We Offer</p>
-        <h2 className="section-title">Comprehensive Study Abroad Solutions</h2>
+        <h2 className="section-title">Comprehensive Educational Solutions</h2>
         <div className="services-grid">
           {services.map((service) => (
             <article key={service.num} className="service-card">

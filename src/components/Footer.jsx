@@ -1,12 +1,13 @@
-import logo from '../assets/logo.webp'
+import logo from '/newlogo.png'
 
-const countries = [
-  { label: '🇬🇧 United Kingdom', id: 'uk' },
-  { label: '🇺🇸 United States', id: 'usa' },
-  { label: '🇨🇦 Canada', id: 'canada' },
-  { label: '🇦🇺 Australia', id: 'australia' },
-  { label: '🇮🇪 Ireland', id: 'ireland' },
-  { label: '🇩🇪 Germany', id: 'germany' },
+const destinations = [
+  { label: 'Kerala', id: 'kerala' },
+  { label: 'Karnataka', id: 'karnataka' },
+  { label: 'Tamil Nadu', id: 'tamilnadu' },
+  { label: 'Bangalore', id: 'bangalore' },
+  { label: 'Pune', id: 'pune' },
+  { label: 'Punjab', id: 'punjab' },
+  { label: 'Delhi', id: 'delhi' },
 ]
 
 const quickLinks = [
@@ -33,21 +34,21 @@ function Footer() {
             <a href="#" className="logo" onClick={(e) => { e.preventDefault(); scrollTo('home') }}>
               <img src={logo} alt="Right Way Education Logo" className="logo-img footer-logo-img" />
             </a>
-            <p className="footer-tagline">Your trusted partner for study abroad success.</p>
+            <p className="footer-tagline">Your trusted partner for educational success.</p>
 
           </div>
 
           {/* Study Destinations */}
           <div className="footer-col">
-            <h4 className="footer-col-title">Study Destinations</h4>
+            <h4 className="footer-col-title">Study in India</h4>
             <ul className="footer-links">
-              {countries.map((c) => (
-                <li key={c.id}>
+              {destinations.map((d) => (
+                <li key={d.id}>
                   <a
-                    href={`#${c.id}`}
-                    onClick={(e) => { e.preventDefault(); scrollTo(c.id) }}
+                    href={`#${d.id}`}
+                    onClick={(e) => { e.preventDefault(); scrollTo(d.id) }}
                   >
-                    {c.label}
+                    {d.label}
                   </a>
                 </li>
               ))}
@@ -84,7 +85,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copy">© 2025 Right Way Education. All rights reserved.</p>
+          <p className="footer-copy">© 2026 Right Way Education. All rights reserved.</p>
         </div>
       </div>
     </footer>

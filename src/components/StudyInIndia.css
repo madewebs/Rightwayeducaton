@@ -1,0 +1,293 @@
+.study-in-india {
+  position: relative;
+  background: linear-gradient(135deg, rgba(253, 251, 251, 0.8) 0%, rgba(235, 237, 238, 0.8) 100%);
+  backdrop-filter: blur(20px);
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+/* Background aesthetic elements */
+.study-in-india::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.study-in-india::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(107, 91, 79, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sii-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sii-tagline {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #c4b8a8;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.sii-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.sii-title span {
+  color: #c4b8a8;
+  font-style: italic;
+}
+
+.sii-desc {
+  font-size: 1.15rem;
+  color: #4a4a4a;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.sii-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sii-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(196, 184, 168, 0.4);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sii-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(250, 248, 245, 1) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.sii-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(196, 184, 168, 0.15);
+  border-color: rgba(196, 184, 168, 0.8);
+}
+
+.sii-card:hover::before {
+  opacity: 1;
+}
+
+.sii-location-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(196, 184, 168, 0.2);
+}
+
+.sii-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background: #fdfbfb;
+  border: 1px solid rgba(196, 184, 168, 0.5);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #c4b8a8;
+  transition: all 0.3s ease;
+}
+
+.sii-card:hover .sii-icon-wrapper {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+  transform: rotate(5deg) scale(1.1);
+}
+
+.sii-location-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sii-location-state {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sii-content h4 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sii-content h4::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #c4b8a8;
+}
+
+.sii-colleges-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.sii-colleges-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.sii-colleges-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #c4b8a8;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.sii-card:hover .sii-colleges-list li:hover {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.sii-card:hover .sii-colleges-list li:hover::before {
+  transform: scale(1.2);
+  color: #1a1a1a;
+}
+
+.sii-card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 1.25rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(196, 184, 168, 0.3);
+}
+
+.sii-highlight {
+  font-size: 0.85rem;
+  color: #6b5b4f;
+  background: rgba(196, 184, 168, 0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.sii-card-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.03em;
+  position: relative;
+  overflow: hidden;
+}
+
+.sii-card-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: all 0.5s ease;
+}
+
+.sii-card-btn:hover::after {
+  left: 100%;
+}
+
+.sii-card-btn:hover {
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .study-in-india {
+    padding: 4rem 0;
+  }
+  
+  .sii-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .sii-card {
+    padding: 2rem 1.5rem;
+  }
+}

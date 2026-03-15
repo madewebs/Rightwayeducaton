@@ -1,18 +1,33 @@
 const testimonials = [
   {
-    quote: "Right Way Education made my dream of studying in the UK a reality. Their guidance was invaluable.",
-    name: "Priya S.",
-    uni: "University of Edinburgh, UK",
+    quote: "The guidance I received for NIT Calicut was exceptional. They understood my preferences and helped me secure a seat in my dream course.",
+    name: "Rahul V.",
+    uni: "National Institute of Technology (NIT), Calicut",
   },
   {
-    quote: "From zero to Stanford—I couldn't have done it without their expert support and patience.",
+    quote: "From choosing the right stream to getting into IIM Bangalore, Right Way was with me at every step. Truly professional consultation.",
+    name: "Meera J.",
+    uni: "Indian Institute of Management (IIM-B), Bangalore",
+  },
+  {
+    quote: "I always dreamed of AIIMS, but the admission process seemed daunting. Right Way made it smooth and manageable.",
+    name: "Aditya N.",
+    uni: "All India Institute of Medical Sciences (AIIMS), Delhi",
+  },
+  {
+    quote: "The team helped me navigate the admissions for Anna University perfectly. Highly recommended for students looking for quality education.",
+    name: "Sowmya R.",
+    uni: "Anna University, Chennai",
+  },
+  {
+    quote: "Studying at Stanford felt like a distant dream until Right Way showed me the path. Their global expertise is unmatched.",
     name: "Arjun M.",
     uni: "Stanford University, USA",
   },
   {
-    quote: "Transparent, professional, and genuinely care about your success. Highly recommend!",
-    name: "Neha K.",
-    uni: "University of Melbourne, Australia",
+    quote: "Transparent and professional. They helped me get into the University of Edinburgh with a full scholarship!",
+    name: "Priya S.",
+    uni: "University of Edinburgh, UK",
   },
 ]
 
