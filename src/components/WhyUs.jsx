@@ -27,7 +27,7 @@ function WhyUs() {
           </div>
           <div className="why-us-visual">
             <div className="stat-card">
-              <span className="stat-number">?+</span>
+              <span className="stat-number">5+</span>
               <span className="stat-label">Years of Excellence</span>
             </div>
           </div>
