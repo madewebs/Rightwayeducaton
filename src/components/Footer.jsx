@@ -1,13 +1,12 @@
 import logo from '/newlogo.png'
 
 const destinations = [
-  { label: 'Kerala', id: 'kerala' },
-  { label: 'Karnataka', id: 'karnataka' },
-  { label: 'Tamil Nadu', id: 'tamilnadu' },
-  { label: 'Bangalore', id: 'bangalore' },
-  { label: 'Pune', id: 'pune' },
-  { label: 'Punjab', id: 'punjab' },
-  { label: 'Delhi', id: 'delhi' },
+  { label: 'Universities', id: 'universities' },
+  { label: 'Arts & Science', id: 'arts-science' },
+  { label: 'Medical Colleges', id: 'medical' },
+  { label: 'Nursing Colleges', id: 'nursing' },
+  { label: 'Engineering', id: 'engineering' },
+  { label: 'Group of Institutions', id: 'prof-group' },
 ]
 
 const quickLinks = [

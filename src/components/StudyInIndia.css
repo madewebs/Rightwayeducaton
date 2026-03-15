@@ -1,8 +1,7 @@
 .study-in-india {
   position: relative;
-  background: linear-gradient(135deg, rgba(253, 251, 251, 0.8) 0%, rgba(235, 237, 238, 0.8) 100%);
-  backdrop-filter: blur(20px);
-  padding: 5rem 0;
+  background: linear-gradient(135deg, #fffcf9 0%, #f7f3f0 100%);
+  padding: 6rem 0;
   overflow: hidden;
 }
 
@@ -12,9 +11,9 @@
   position: absolute;
   top: -10%;
   right: -5%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(196, 184, 168, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -24,270 +23,250 @@
   position: absolute;
   bottom: -10%;
   left: -5%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(107, 91, 79, 0.06) 0%, transparent 70%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(42, 42, 42, 0.03) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .sii-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   position: relative;
   z-index: 2;
 }
 
 .sii-tagline {
-  font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #c4b8a8;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
+  font-weight: 500;
 }
 
 .sii-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2.8rem, 6vw, 4rem);
   color: #1a1a1a;
   margin-bottom: 1.5rem;
   font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
 }
 
 .sii-title span {
   color: #c4b8a8;
   font-style: italic;
+  font-weight: 400;
 }
 
 .sii-desc {
-  font-size: 1.15rem;
-  color: #4a4a4a;
-  max-width: 600px;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 .sii-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 3rem;
   position: relative;
   z-index: 2;
+  align-items: stretch; /* Keep cards same height in a row */
 }
 
 .sii-card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(196, 184, 168, 0.4);
-  border-radius: 20px;
-  padding: 2.5rem 2rem;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  cursor: default;
+  background: #ffffff;
+  border: 1px solid rgba(196, 184, 168, 0.3);
+  border-radius: 0;
+  padding: 3rem 2.5rem;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
 }
 
-.sii-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(250, 248, 245, 1) 100%);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+/* Featured card layout (Universities) */
+.sii-card--featured {
+  grid-column: span 2; /* Take two columns on large screens */
+}
+
+.sii-card--featured .sii-institutions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
 }
 
 .sii-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(196, 184, 168, 0.15);
-  border-color: rgba(196, 184, 168, 0.8);
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  border-color: #c4b8a8;
 }
 
-.sii-card:hover::before {
-  opacity: 1;
-}
-
-.sii-location-header {
+.sii-card-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(196, 184, 168, 0.2);
+  border-bottom: 1px solid rgba(196, 184, 168, 0.15);
 }
 
 .sii-icon-wrapper {
-  width: 50px;
-  height: 50px;
-  background: #fdfbfb;
-  border: 1px solid rgba(196, 184, 168, 0.5);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #c4b8a8;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  flex-shrink: 0;
 }
 
 .sii-card:hover .sii-icon-wrapper {
-  background: #1a1a1a;
-  color: #fff;
-  border-color: #1a1a1a;
-  transform: rotate(5deg) scale(1.1);
+  transform: scale(1.1);
+  color: #1a1a1a;
 }
 
-.sii-location-name {
+.sii-category-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   color: #1a1a1a;
   margin: 0;
   line-height: 1.2;
+  font-weight: 600;
 }
 
-.sii-location-state {
-  font-size: 0.85rem;
-  color: #8a8a8a;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.sii-content h4 {
-  font-size: 1.1rem;
-  color: #1a1a1a;
-  margin-bottom: 1rem;
-  font-weight: 500;
+.sii-institutions {
+  flex-grow: 1;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 1.75rem; /* Reduced gap slightly for better density */
 }
 
-.sii-content h4::before {
+.sii-inst-item {
+  position: relative;
+}
+
+.sii-inst-name {
+  font-size: 1.1rem; /* Slightly smaller for density */
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-family: 'Outfit', sans-serif;
+}
+
+.sii-inst-courses {
+  font-size: 0.9rem; /* Slightly smaller for density */
+  color: #666;
+  line-height: 1.5;
+  font-weight: 400;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.sii-inst-courses::before {
   content: '';
-  display: inline-block;
-  width: 20px;
-  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 8px;
+  height: 1px;
   background: #c4b8a8;
 }
 
-.sii-colleges-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem 0;
-}
-
-.sii-colleges-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.8rem;
-  font-size: 0.95rem;
-  color: #4a4a4a;
-  line-height: 1.5;
-  transition: color 0.3s ease;
-}
-
-.sii-colleges-list li::before {
-  content: '✦';
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #c4b8a8;
-  font-size: 0.9rem;
-  transition: transform 0.3s ease;
-}
-
-.sii-card:hover .sii-colleges-list li:hover {
-  color: #1a1a1a;
-  font-weight: 500;
-}
-
-.sii-card:hover .sii-colleges-list li:hover::before {
-  transform: scale(1.2);
-  color: #1a1a1a;
-}
-
 .sii-card-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: stretch;
-  gap: 1.25rem;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px dashed rgba(196, 184, 168, 0.3);
-}
-
-.sii-highlight {
-  font-size: 0.85rem;
-  color: #6b5b4f;
-  background: rgba(196, 184, 168, 0.15);
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-weight: 500;
-  align-self: flex-start;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(196, 184, 168, 0.1);
 }
 
 .sii-card-btn {
-  display: inline-block;
-  width: 100%;
-  padding: 0.85rem 1.5rem;
-  font-family: inherit;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  background: transparent;
   border: 1px solid #1a1a1a;
-  border-radius: 8px;
+  color: #1a1a1a;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  letter-spacing: 0.03em;
-  position: relative;
-  overflow: hidden;
+  transition: all 0.4s ease;
+  width: max-content; /* Don't force full width on desktop for elegant look */
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0;
+  margin: 0 auto;
 }
 
-.sii-card-btn::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-  transition: all 0.5s ease;
-}
-
-.sii-card-btn:hover::after {
-  left: 100%;
+.sii-card-btn svg {
+  transition: transform 0.3s ease;
 }
 
 .sii-card-btn:hover {
-  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  border-color: #000;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.sii-card-btn:hover svg {
+  transform: translateX(5px);
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+  .sii-card--featured {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sii-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .sii-card--featured .sii-institutions {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .study-in-india {
     padding: 4rem 0;
   }
   
+  .sii-header {
+    margin-bottom: 3rem;
+  }
+
+  .sii-title {
+    font-size: 2.5rem;
+  }
+
+  .sii-card {
+    padding: 2.5rem 2rem;
+  }
+
   .sii-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
-  
-  .sii-card {
-    padding: 2rem 1.5rem;
+
+  .sii-card--featured {
+    grid-column: span 1;
+  }
+
+  .sii-card-btn {
+    width: 100%;
+  }
+
+  .sii-institutions {
+    gap: 1.5rem;
   }
 }

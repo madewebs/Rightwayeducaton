@@ -1,33 +1,33 @@
 const testimonials = [
   {
-    quote: "The guidance I received for NIT Calicut was exceptional. They understood my preferences and helped me secure a seat in my dream course.",
+    quote: "Securing an MBA seat at Christ University seemed impossible until I spoke with Right Way. Their expertise in the admission process is unparalleled.",
     name: "Rahul V.",
-    uni: "National Institute of Technology (NIT), Calicut",
+    uni: "Christ University, Bangalore",
   },
   {
-    quote: "From choosing the right stream to getting into IIM Bangalore, Right Way was with me at every step. Truly professional consultation.",
+    quote: "From entrance coaching to final admission at St. John's Medical College, the team supported me every step of the way. Truly grateful!",
     name: "Meera J.",
-    uni: "Indian Institute of Management (IIM-B), Bangalore",
+    uni: "St. John's Medical College, Bangalore",
   },
   {
-    quote: "I always dreamed of AIIMS, but the admission process seemed daunting. Right Way made it smooth and manageable.",
+    quote: "I highly recommend Right Way for Engineering aspirants. They helped me get into PES University for Computer Science, and the process was seamless.",
     name: "Aditya N.",
-    uni: "All India Institute of Medical Sciences (AIIMS), Delhi",
+    uni: "PES University, Bangalore",
   },
   {
-    quote: "The team helped me navigate the admissions for Anna University perfectly. Highly recommended for students looking for quality education.",
+    quote: "The guidance I received for Jain University was exceptional. They understood my career goals and helped me choose the best management program.",
     name: "Sowmya R.",
-    uni: "Anna University, Chennai",
+    uni: "Jain University, Bangalore",
   },
   {
-    quote: "Studying at Stanford felt like a distant dream until Right Way showed me the path. Their global expertise is unmatched.",
-    name: "Arjun M.",
-    uni: "Stanford University, USA",
-  },
-  {
-    quote: "Transparent and professional. They helped me get into the University of Edinburgh with a full scholarship!",
+    quote: "As a nursing student, I found their advice on MS Ramaiah Institute of Nursing very helpful. They made the documentation and application so easy.",
     name: "Priya S.",
-    uni: "University of Edinburgh, UK",
+    uni: "MS Ramaiah Institute of Nursing, Bangalore",
+  },
+  {
+    quote: "Right Way is the best for Arts and Science admissions. They helped me secure a seat in Kristu Jayanti College for my Master's.",
+    name: "Arjun M.",
+    uni: "Kristu Jayanti College, Bangalore",
   },
 ]
 

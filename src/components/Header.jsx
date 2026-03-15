@@ -22,21 +22,20 @@ function Header() {
     { label: 'Germany', id: 'germany' },
   ]
 
-  const studyInIndiaStates = [
-    { label: 'New Delhi', id: 'delhi' },
-    { label: 'Karnataka', id: 'karnataka' },
-    { label: 'Bangalore', id: 'bangalore' },
-    { label: 'Tamil Nadu', id: 'tamilnadu' },
-    { label: 'Kerala', id: 'kerala' },
-    { label: 'Punjab', id: 'punjab' },
-    { label: 'Pune', id: 'pune' },
+  const studyInIndiaCategories = [
+    { label: 'Universities', id: 'universities' },
+    { label: 'Arts & Science', id: 'arts-science' },
+    { label: 'Medical', id: 'medical' },
+    { label: 'Nursing', id: 'nursing' },
+    { label: 'Engineering', id: 'engineering' },
+    { label: 'Group of Institutions', id: 'prof-group' },
   ]
 
   const desktopLinks = [
     { label: 'Home', id: 'home' },
     { label: 'Services', id: 'services' },
     { label: 'Study Abroad', id: 'study-abroad' },
-    { label: 'Study In India', id: 'study-in-india', dropdown: true, dropdownItems: studyInIndiaStates },
+    { label: 'Study In India', id: 'study-in-india', dropdown: true, dropdownItems: studyInIndiaCategories },
     { label: 'Why Us', id: 'why-us' },
     { label: 'Get Started', id: 'contact', cta: true },
   ]
@@ -45,7 +44,7 @@ function Header() {
     { label: 'Home', id: 'home' },
     { label: 'Services', id: 'services' },
     { label: 'Study Abroad', id: 'study-abroad' },
-    { label: 'Study In India', id: 'study-in-india', dropdown: true, dropdownItems: studyInIndiaStates },
+    { label: 'Study In India', id: 'study-in-india', dropdown: true, dropdownItems: studyInIndiaCategories },
     { label: 'Why Us', id: 'why-us' },
     { label: 'Process', id: 'process' },
     { label: 'Get Started', id: 'contact', cta: true },
