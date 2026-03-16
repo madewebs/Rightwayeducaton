@@ -28,10 +28,9 @@ function Contact() {
         <div className="contact-wrapper">
           <div className="contact-info">
             <p className="section-tagline">Get Started</p>
-            <h2 className="section-title">Begin Your Global Journey</h2>
+            <h2 className="section-title">Bangalore College Admission Consultants — Based in Kozhikode</h2>
             <p>
-              Book a free consultation and let our experts chart the right path for
-              your dream education.
+              Book a <strong>free consultation</strong> with our expert admission advisors. We help Kerala students get <strong>direct admission in Bangalore colleges</strong> for BTech, BBA, BCA, BCom, MBA, Medical & Nursing programs.
             </p>
             <ul className="contact-details">
               <li>📧 rightwayeduinternational@gmail.com</li>

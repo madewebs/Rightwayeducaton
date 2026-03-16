@@ -1,23 +1,23 @@
 const services = [
   {
     num: '01',
-    title: 'University Selection',
-    desc: 'Personalized shortlisting based on your profile, preferences, and career goals across top destinations worldwide.',
+    title: 'College Admission in Bangalore',
+    desc: 'Direct admission guidance for top Bangalore colleges — BTech, BBA, BCA, BCom, MBA, Medical & Nursing. Specialised support for Kerala students seeking Bangalore university admission.',
   },
   {
     num: '02',
-    title: 'Application Support',
-    desc: 'End-to-end application assistance including SOPs, LORs, and documentation for a seamless submission.',
+    title: 'Application & Documentation Support',
+    desc: 'End-to-end application assistance including SOPs, LORs, and documentation. We handle the complete Bangalore college admission process for you.',
   },
   {
     num: '03',
-    title: 'Visa Guidance',
-    desc: 'Expert visa counseling and preparation to maximize your chances of approval for your dream destination.',
+    title: 'Visa & Abroad Study Guidance',
+    desc: 'Expert visa counseling and preparation for UK, USA, Canada, Australia & Europe. Maximize your approval chances for your dream destination.',
   },
   {
     num: '04',
-    title: 'Scholarship Assistance',
-    desc: 'Identify and apply for scholarships, grants, and funding options to make your dream education affordable.',
+    title: 'Scholarship & Management Quota',
+    desc: 'Identify scholarships, grants, and management quota seats in top Bangalore engineering, medical, and business colleges — making quality education affordable.',
   },
 ]
 
@@ -26,7 +26,10 @@ function Services() {
     <section id="services" className="section services">
       <div className="container">
         <p className="section-tagline">What We Offer</p>
-        <h2 className="section-title">Comprehensive Educational Solutions</h2>
+        <h2 className="section-title">Comprehensive Admission & Consultancy Services</h2>
+        <p style={{ textAlign: 'center', marginBottom: '2rem', opacity: 0.7, maxWidth: '700px', margin: '0 auto 2.5rem' }}>
+          As the leading <strong>education consultancy in Kozhikode</strong>, we help students from Kerala secure <strong>direct admission in Bangalore colleges</strong> — from engineering and medicine to management and nursing.
+        </p>
         <div className="services-grid">
           {services.map((service) => (
             <article key={service.num} className="service-card">
